@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"  ", "uname -r",					0,		8},
-	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	0,		8},
+	{" ", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	5,		8},
 	{" ", "grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage \"%\"}'",					5,		14},
 
 	{" " , "date '+%b %d (%a) %I:%M%p'",					60,		1},
