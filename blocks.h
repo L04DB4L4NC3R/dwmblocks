@@ -8,7 +8,7 @@ static const Block blocks[] = {
 	{" " , "date '+%b %d (%a) %I:%M%p'",					60,		1},
 	//{"ﲊ ", "free --mebi | sed -n '2{p;q}' | awk '{printf (\"%2.2fGiB/%2.2fGiB\n\", ( $3 / 1024), ($2 / 1024))}'",     5,      14},
 	{" ", "pacman -Qu | grep -Fcv \"[ignored]\"",					60*60*24,		8},
-	{" ", "newsboat -x print-unread",					60*60*12,		6},
+	{" ", "newsboat -x print-unread",					60*60,		6},
 	{" ", "acpi | cut -d' ' -f4-5",					10,		3},
 };
 
